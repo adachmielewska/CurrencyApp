@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  CurrencyApp
+
+  Created by Adriana Chmielewska on 27/06/2021.
+  Copyright © 2021 Adriana Chmielewska. All rights reserved.
+*/
+
+"navigationTitle.bpiIndex" = "BPI Index";
+"navigationTitle.curentRates" = "Current rates";
+
+"error.commonError" = "An error occured";
+
+"currentIndex.title" = "Today";
+"currentIndex.description" = "* It's a current price updated every 60 seconds";
+"currentIndex.note" = "Powered by CoinDesk";
+"currentIndex.empty" = "Data not avalilable";
+"currentIndex.dismiss" = "Dismiss";
+
+"historical.title" = "Historical Prices";
