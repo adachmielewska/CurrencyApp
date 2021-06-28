@@ -27,8 +27,8 @@ struct RealHistoricalIndexService: HistoricalIndexService {
         dateFormatter.dateFormat = "yyyy-MM-dd"
         let yesterday = Calendar.current.date(byAdding: .day, value: -1, to: Date.currentDate)
         let twoWeeks = Calendar.current.date(byAdding: .day, value: -14, to: Date.currentDate)
-        webRepository.call(endpoint: BPIEndpoints.historicalIndex(startDate: dateFormatter.string(from: twoWeeks ?? Date()),
-                                                                  endDate:  dateFormatter.string(from: yesterday ?? Date())))
+        webRepository.call(endpoint: BPIEndpoints.historicalIndex(startDate: dateFormatter.string(from: twoWeeks ?? Date.currentDate),
+                                                                  endDate:  dateFormatter.string(from: yesterday ?? Date.currentDate)))
             .sinkToLoadable { (result: Loadable<HistoricalIndex>) in
                 guard result.error == nil else { data.wrappedValue = .failed(result.error!); return }
                 data.wrappedValue = .loaded(HistoricalPresentationModel.fromPresentationModel(item: result.value))

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A4F58DE26866FFD00737CE5 /* HistoricalIndex.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A4F58DD26866FFD00737CE5 /* HistoricalIndex.json */; };
 		3A4F58E02686700800737CE5 /* CurrentIndex.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A4F58DF2686700800737CE5 /* CurrentIndex.json */; };
 		3A4F58E22686708800737CE5 /* CurrentIndexService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4F58E12686708800737CE5 /* CurrentIndexService.swift */; };
 		3A4F58E42686710000737CE5 /* CurrentIndexPresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4F58E32686710000737CE5 /* CurrentIndexPresentationModel.swift */; };
@@ -24,6 +23,7 @@
 		3A4F59032688E84C00737CE5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A4F59022688E84C00737CE5 /* Localizable.strings */; };
 		3A4F5905268A4ADA00737CE5 /* CurrencyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4F5904268A4ADA00737CE5 /* CurrencyAppUITests.swift */; };
 		3A4F5907268A4ED800737CE5 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4F5906268A4ED800737CE5 /* Helpers.swift */; };
+		3A4F5966268A6DD000737CE5 /* HistoricalIndex.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A4F5965268A6DD000737CE5 /* HistoricalIndex.json */; };
 		3AC6371726652CDE00FB3CC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC6371626652CDE00FB3CC8 /* AppDelegate.swift */; };
 		3AC6371926652CDE00FB3CC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC6371826652CDE00FB3CC8 /* SceneDelegate.swift */; };
 		3AC6371B26652CDE00FB3CC8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC6371A26652CDE00FB3CC8 /* ContentView.swift */; };
@@ -79,7 +79,6 @@
 		2C989CC19C3875D1A4AB4BC4 /* Pods-WeatherApp-WeatherAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp-WeatherAppUITests.release.xcconfig"; path = "Target Support Files/Pods-WeatherApp-WeatherAppUITests/Pods-WeatherApp-WeatherAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2CCA8DE38DBAA1B5018ECA6F /* Pods_CurrencyAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CurrencyAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34195525D85EC89C1086B0C2 /* Pods-CurrencyApp-CurrencyAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurrencyApp-CurrencyAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-CurrencyApp-CurrencyAppUITests/Pods-CurrencyApp-CurrencyAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		3A4F58DD26866FFD00737CE5 /* HistoricalIndex.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HistoricalIndex.json; sourceTree = "<group>"; };
 		3A4F58DF2686700800737CE5 /* CurrentIndex.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CurrentIndex.json; sourceTree = "<group>"; };
 		3A4F58E12686708800737CE5 /* CurrentIndexService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentIndexService.swift; sourceTree = "<group>"; };
 		3A4F58E32686710000737CE5 /* CurrentIndexPresentationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentIndexPresentationModel.swift; sourceTree = "<group>"; };
@@ -96,6 +95,7 @@
 		3A4F59022688E84C00737CE5 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		3A4F5904268A4ADA00737CE5 /* CurrencyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyAppUITests.swift; sourceTree = "<group>"; };
 		3A4F5906268A4ED800737CE5 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		3A4F5965268A6DD000737CE5 /* HistoricalIndex.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HistoricalIndex.json; sourceTree = "<group>"; };
 		3AC6371326652CDE00FB3CC8 /* CurrencyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AC6371626652CDE00FB3CC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AC6371826652CDE00FB3CC8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -272,8 +272,8 @@
 				3A4F58E72686809600737CE5 /* CurrentIndex.swift */,
 				3A4F58E926877D2300737CE5 /* HistoricalIndex.swift */,
 				3AE156772686690D00DCC9D4 /* BPIEndpoints.swift */,
-				3A4F58DD26866FFD00737CE5 /* HistoricalIndex.json */,
 				3A4F58DF2686700800737CE5 /* CurrentIndex.json */,
+				3A4F5965268A6DD000737CE5 /* HistoricalIndex.json */,
 				3AC6374A26652E0D00FB3CC8 /* Store.swift */,
 				3AC6374C26652EB800FB3CC8 /* DIContainer.swift */,
 				3AC6374E26652EE000FB3CC8 /* AppState.swift */,
@@ -456,9 +456,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A4F58DE26866FFD00737CE5 /* HistoricalIndex.json in Resources */,
 				3A4F59032688E84C00737CE5 /* Localizable.strings in Resources */,
 				3AC6372326652CDF00FB3CC8 /* LaunchScreen.storyboard in Resources */,
+				3A4F5966268A6DD000737CE5 /* HistoricalIndex.json in Resources */,
 				3AC6372026652CDF00FB3CC8 /* Preview Assets.xcassets in Resources */,
 				3A4F58E02686700800737CE5 /* CurrentIndex.json in Resources */,
 				3AC6371D26652CDF00FB3CC8 /* Assets.xcassets in Resources */,

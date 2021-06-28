@@ -60,10 +60,10 @@ final class HistoricalIndexServiceTests: XCTestCase {
 
 extension MockedResponse {
     static func historicalIndex() -> MockedResponse {
-        return RequestMocking.successfulResponse(enpoint: BPIEndpoints.historicalIndex(startDate: "2021-06-24", endDate: "2021-06-11"), response: "HistoricalIndex")
+        return RequestMocking.successfulResponse(enpoint: BPIEndpoints.historicalIndex(startDate: "2021-06-11", endDate: "2021-06-24"), response: "HistoricalIndex")
     }
 
     static func historicalIndexFailed() -> MockedResponse {
-        return RequestMocking.failedResponse(enpoint: BPIEndpoints.historicalIndex(startDate: "2021-06-24", endDate: "2021-06-11"), response: nil)
+        return RequestMocking.failedResponse(enpoint: BPIEndpoints.historicalIndex(startDate: "2021-06-11", endDate: "2021-06-24"), response: nil)
     }
 }
