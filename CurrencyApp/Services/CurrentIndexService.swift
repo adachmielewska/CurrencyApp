@@ -30,3 +30,7 @@ struct RealCurrentIndexService: CurrentIndexService {
         }.store(in: cancelBag)
     }
 }
+
+struct StubCurrrentIndexService: CurrentIndexService {
+    func fetchCurrent(data: LoadableSubject<CurrentIndexPresentationModel>) {}
+}

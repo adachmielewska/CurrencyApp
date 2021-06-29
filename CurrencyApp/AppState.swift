@@ -36,3 +36,9 @@ extension AppState {
         var locationDetails = CurrentIndexDetailsView.Routing()
     }
 }
+
+extension AppState {
+    static var preview: AppState {
+        return AppState()
+    }
+}

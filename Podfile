@@ -10,7 +10,7 @@ target 'CurrencyApp' do
 
   target 'CurrencyAppTests' do
     inherit! :search_paths
-    # Pods for testing
+    pod 'SnapshotTesting'
   end
 
   target 'CurrencyAppUITests' do

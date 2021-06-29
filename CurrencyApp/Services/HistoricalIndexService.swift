@@ -35,3 +35,7 @@ struct RealHistoricalIndexService: HistoricalIndexService {
         }.store(in: cancelBag)
     }
 }
+
+struct StubHistoricalIndexService: HistoricalIndexService {
+    func fetchIndex(data: LoadableSubject<[HistoricalPresentationModel]>) {}
+}

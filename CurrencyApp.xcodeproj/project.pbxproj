@@ -24,6 +24,7 @@
 		3A4F5905268A4ADA00737CE5 /* CurrencyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4F5904268A4ADA00737CE5 /* CurrencyAppUITests.swift */; };
 		3A4F5907268A4ED800737CE5 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4F5906268A4ED800737CE5 /* Helpers.swift */; };
 		3A4F5966268A6DD000737CE5 /* HistoricalIndex.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A4F5965268A6DD000737CE5 /* HistoricalIndex.json */; };
+		3A4F5968268B2EC800737CE5 /* BPIIndexListViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4F5967268B2EC800737CE5 /* BPIIndexListViewSnapshotTests.swift */; };
 		3AC6371726652CDE00FB3CC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC6371626652CDE00FB3CC8 /* AppDelegate.swift */; };
 		3AC6371926652CDE00FB3CC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC6371826652CDE00FB3CC8 /* SceneDelegate.swift */; };
 		3AC6371B26652CDE00FB3CC8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC6371A26652CDE00FB3CC8 /* ContentView.swift */; };
@@ -96,6 +97,7 @@
 		3A4F5904268A4ADA00737CE5 /* CurrencyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyAppUITests.swift; sourceTree = "<group>"; };
 		3A4F5906268A4ED800737CE5 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		3A4F5965268A6DD000737CE5 /* HistoricalIndex.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HistoricalIndex.json; sourceTree = "<group>"; };
+		3A4F5967268B2EC800737CE5 /* BPIIndexListViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPIIndexListViewSnapshotTests.swift; sourceTree = "<group>"; };
 		3AC6371326652CDE00FB3CC8 /* CurrencyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AC6371626652CDE00FB3CC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AC6371826652CDE00FB3CC8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -299,6 +301,7 @@
 				3AC6372F26652CDF00FB3CC8 /* Info.plist */,
 				3AC6375F2666B0A700FB3CC8 /* WebRepositoryTests.swift */,
 				3A4F58EB2687CFFB00737CE5 /* CurrentIndexServiceTests.swift */,
+				3A4F5967268B2EC800737CE5 /* BPIIndexListViewSnapshotTests.swift */,
 				3A4F58ED2687DD1E00737CE5 /* HistoricalIndexServiceTests.swift */,
 				3AC637652666B67E00FB3CC8 /* TestHelpers.swift */,
 				3AC637612666B10300FB3CC8 /* MockWebRepository.swift */,
@@ -377,6 +380,7 @@
 				3AC6372526652CDF00FB3CC8 /* Sources */,
 				3AC6372626652CDF00FB3CC8 /* Frameworks */,
 				3AC6372726652CDF00FB3CC8 /* Resources */,
+				72443A2783B298631D27FD99 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -502,6 +506,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72443A2783B298631D27FD99 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CurrencyAppTests/Pods-CurrencyAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CurrencyAppTests/Pods-CurrencyAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CurrencyAppTests/Pods-CurrencyAppTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7554803CD409113D90BC4275 /* [CP] Embed Pods Frameworks */ = {
@@ -632,6 +653,7 @@
 				3AC637622666B10300FB3CC8 /* MockWebRepository.swift in Sources */,
 				3AC637602666B0A700FB3CC8 /* WebRepositoryTests.swift in Sources */,
 				3A4F58EC2687CFFB00737CE5 /* CurrentIndexServiceTests.swift in Sources */,
+				3A4F5968268B2EC800737CE5 /* BPIIndexListViewSnapshotTests.swift in Sources */,
 				3AC637662666B67E00FB3CC8 /* TestHelpers.swift in Sources */,
 				3A4F58EE2687DD1E00737CE5 /* HistoricalIndexServiceTests.swift in Sources */,
 			);

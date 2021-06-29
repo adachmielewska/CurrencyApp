@@ -28,5 +28,15 @@ extension DIContainer {
     struct Services {
         let currentIndexService: CurrentIndexService
         let historicalIndexesService: HistoricalIndexService
+
+        static var stub: Self {
+            .init(currentIndexService: StubCurrrentIndexService(), historicalIndexesService: StubHistoricalIndexService())
+        }
+    }
+}
+
+extension DIContainer {
+    static var preview: Self {
+        .init(appState: .preview, services: Services.stub)
     }
 }
